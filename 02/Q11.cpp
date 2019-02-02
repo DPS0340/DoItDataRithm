@@ -23,5 +23,6 @@ int dayofyear(int y, int m, int d) {
 }
 
 int main() {
+	// 105
 	cout << dayofyear(2017, 4, 15) << endl;
 }
