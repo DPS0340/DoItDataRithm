@@ -92,6 +92,7 @@ int main() {
 	int len;
 	cout << "int 스택의 갯수를 정해주세요." << endl;
 	cin >> len;
+	Initialize(s, len);
 	int command, x;
 	do {
 		cout << "0.종료\n1.Push\n2.Pop\n3.Peek\n4.Clear\n5.Capacity\n6.Size\n7.IsEmpty\n8.IsFull\n9.Print\n";
@@ -132,7 +133,6 @@ int main() {
 			break;
 		}
 	} while (command != 0);
-	Initialize(s, len);
 	Terminate(s);
 	delete s;
 	cout << "스택 삭제가 완료되었습니다." << endl;
