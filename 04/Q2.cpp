@@ -73,6 +73,19 @@ int main() {
 	int len = 5;
 	Initialize_Front(s1, len);
 	Initialize_Back(s2, len, s1->stk);
+	int k = 1;
+	for(int i=0;i<5;i++) {
+		Push_Front(s1, &k);
+	}
+	for(int i=0;i<5;i++) {
+		Push_back(s2, &k);
+	}
+	for(int i=0;i<5;i++) {
+		Pop_Front(s1, &k);
+	}
+	for(int i=0;i<5;i++) {
+		Pop_Back(s2, &k);
+	}
 	Terminate(s1);
 	delete s1;
 	delete s2;
