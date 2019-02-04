@@ -22,7 +22,7 @@ int* Initialize_Back(IntStack *s, int max, int* Front) {
 	s->ptr = 0;
 	if (Front == NULL) {
 		s->max = 0;
-		return -1;
+		return NULL;
 	}
 	s->max = max;
 	return s->stk + max * 2 - 1;
@@ -78,7 +78,7 @@ int main() {
 		Push_Front(s1, &k);
 	}
 	for(int i=0;i<5;i++) {
-		Push_back(s2, &k);
+		Push_Back(s2, &k);
 	}
 	for(int i=0;i<5;i++) {
 		Pop_Front(s1, &k);
