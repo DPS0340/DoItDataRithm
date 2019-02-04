@@ -2,7 +2,6 @@
 
 using namespace std;
 
-// 책에서 구현된 구조체와 함수 시작
 typedef struct {
 	int max;
 	int ptr;
